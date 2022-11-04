@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:33:44 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzA5OjM0OjU0IEFNOzMwNzY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzExOjMzOjQ0IEFNOzQ7MzE3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="finding the solution of quadratic equation"/>
+            <comment text="DECLARE THE COEFFICIENT OF X^2"/>
+            <comment text="let the coefficient of x^2 be 'a'"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="let the coefficient of x be'b'"/>
+            <comment text="DECLARE THE COEFFICIENT OF X"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="let the constant be'c'"/>
+            <comment text="DECLARE THE CONSTANT"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of c&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="DECLAARE THE SOLUTION"/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <comment text="ASSIGN THE VALUE OF SOLUTION"/>
+            <assign variable="x1" expression="(-b+(b^2 - 4*a*c)^0.5) /2*a"/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <assign variable="x2" expression="(-b-(b^2 - 4*a*c)^0.5) /2*a"/>
+            <comment text="WRITE THE OUTPUT IN THE WAY THAT HOW IT SHOULD BE CONCLUDED"/>
+            <output expression="&quot;the solution OF QUADRATIC EQUATION with co efficients a,b,c is&quot; &amp; x1 &amp;&quot;,&quot;&amp; x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

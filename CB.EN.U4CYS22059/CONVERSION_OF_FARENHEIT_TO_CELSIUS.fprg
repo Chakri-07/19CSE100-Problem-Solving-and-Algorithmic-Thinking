@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:01:45 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzA5OjMwOjA3IEFNOzMwNzA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzExOjAxOjQ1IEFNOzI7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="converting the tempature in farenheit to celsius"/>
+            <comment text="DECLARE THE VARIABLE&#13;&#10;"/>
+            <declare name="F" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER THE TEMP IN FARENHEIT&quot;" newline="True"/>
+            <comment text="enter the required input"/>
+            <input variable="F"/>
+            <declare name="C" type="Real" array="False" size=""/>
+            <comment text="ASSIGN THE VALUE FOR VARIABLE WHICH IS TO BE FOUND&#13;&#10;"/>
+            <assign variable="C" expression="(F-32)*5/9"/>
+            <comment text="ENTER THE REQUIRED OUTPUT"/>
+            <output expression="&quot;THE TEMP IN CELSIUS IS&quot;&amp;C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

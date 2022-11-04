@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:18:15 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzExOjEzOjE2IEFNOzMwNjQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzExOjE4OjE1IEFNOzE7MzE3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="swapping the numbers using multiplication and division"/>
+            <comment text="declare the variables"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of a&quot;" newline="True"/>
+            <comment text="user defined input"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="expression for swapping using multiplication and division"/>
+            <assign variable="b" expression="a*b"/>
+            <assign variable="a" expression="b/a"/>
+            <assign variable="b" expression="b/a"/>
+            <output expression="&quot;the new values of a,b are&quot; &amp;a&amp;&quot;,&quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

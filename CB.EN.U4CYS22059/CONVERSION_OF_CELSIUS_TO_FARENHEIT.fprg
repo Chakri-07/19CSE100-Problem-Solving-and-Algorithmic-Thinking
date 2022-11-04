@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:02:53 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzA5OjA2OjQ5IEFNOzMwNzk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzExOjAyOjUzIEFNOzI7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="coversion of temparature in celsius to farenheit"/>
+            <comment text="declare the variable"/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <output expression="&quot;enter temparature in celsius&quot;" newline="True"/>
+            <comment text="enter the required input"/>
+            <input variable="c"/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <comment text="assign the value "/>
+            <assign variable="f" expression="1.8*c+32"/>
+            <comment text="enter the output required"/>
+            <output expression="&quot;the temp in farenheit is&quot;&amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

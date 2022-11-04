@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:56:49 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzEwOjI5OjMxIEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTA0OzEwOjU2OjQ5IEFNOzI7MzE4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to find the modulus of a given number"/>
+            <declare name="Divident, Divisor" type="Real" array="False" size=""/>
+            <declare name="Quotient, remainder" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of divident&quot;" newline="True"/>
+            <comment text="getting input from user"/>
+            <input variable="divident"/>
+            <output expression="&quot;enter the value of divisor&quot;" newline="True"/>
+            <comment text="getting input from user"/>
+            <input variable="divisor"/>
+            <comment text="dividing divident by divisor"/>
+            <assign variable="quotient" expression="divident/divisor"/>
+            <output expression="&quot;the quotient is&quot;&amp;quotient" newline="True"/>
+            <comment text="doing operations to find remainder"/>
+            <assign variable="remainder" expression="divident-(divisor*quotient)"/>
+            <output expression="&quot;the remainder is&quot;&amp;remainder" newline="True"/>
+            <comment text="renaming the input to easily understand the final output"/>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <assign variable="a" expression="divident"/>
+            <assign variable="b" expression="divisor"/>
+            <output expression="a&amp; &quot;%&quot; &amp;b&amp; &quot;is&quot; &amp;remainder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
