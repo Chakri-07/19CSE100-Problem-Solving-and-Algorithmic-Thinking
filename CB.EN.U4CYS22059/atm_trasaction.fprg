@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:57:27 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzA5OjAyOjUwIEFNOzMwNzI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzA5OjU3OjI3IEFNOzI7MzE5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare all the variables"/>
+            <declare name="Pin1, pin2" type="Integer" array="False" size=""/>
+            <declare name="amount, balence" type="Real" array="False" size=""/>
+            <assign variable="pin2" expression="1705"/>
+            <output expression="&quot;Enter a two digit number&quot;" newline="True"/>
+            <comment text="Write a random 2 digit number"/>
+            <input variable="pin1"/>
+            <if expression="pin1&lt;100">
+                <then>
+                    <output expression="&quot;Enter the amount&quot;" newline="True"/>
+                    <input variable="amount"/>
+                    <comment text="enter the amount required to withdrawl"/>
+                    <if expression="amount&lt;5000">
+                        <then>
+                            <comment text="enter the correct atm pin&#13;&#10;"/>
+                            <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                            <input variable="pin2"/>
+                            <if expression="pin2=1705">
+                                <then>
+                                    <output expression="&quot;Your transaction is going on please wait&quot;" newline="True"/>
+                                    <output expression="&quot;Please collect the money&quot;" newline="True"/>
+                                    <assign variable="balence" expression="5000-amount"/>
+                                    <comment text="conclude the acount details "/>
+                                    <output expression="&quot;Account number 12345678&quot;" newline="True"/>
+                                    <output expression="&quot;Mr.XYZ&quot;" newline="True"/>
+                                    <output expression="&quot;your current balence is&quot;&amp; balence" newline="True"/>
+                                    <if expression="balence&gt;1000">
+                                        <then>
+                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Your account doesn't have minimum balence&quot;" newline="True"/>
+                                            <output expression="&quot;Maintain the minimum balence of 1000 to avoid penalty charges&quot;" newline="True"/>
+                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Incorrect pin&quot;" newline="True"/>
+                                    <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Insufficient balence&quot;" newline="True"/>
+                            <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Incorrect details&quot;" newline="True"/>
+                    <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
