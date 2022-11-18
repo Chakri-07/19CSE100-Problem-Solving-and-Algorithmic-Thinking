@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:02:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjM4OjU0IEFNOzMwNzc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjUyOjE5IEFNOzI7Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzA5OjAyOjUwIEFNO2F0bV90cmFzYWN0aW9uLmZwcmc7ODM0Nw=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjUzOjAyIEFNOzE7Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjEwOjE0IEFNO2RlcG9zaXRfdGhlX21vbmV5X2luX2F0bS5mcHJnOzkzODM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjUzOjU1IEFNOzE7Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjIzOjUxIEFNO2NoZWNrX3RoZV9iYWxlbmNlLmZwcmc7ODU4MQ=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjU0OjM3IEFNOzE7Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzEwOjMyOjI5IEFNO2NoYW5nZV9hdG1fcGluLmZwcmc7ODMwNQ=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTExLTE4OzExOjAyOjA0IEFNOzg7MzE3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare all the variables"/>
+            <declare name="amount, balence" type="Real" array="False" size=""/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <declare name="Pin1, pin2, pin3" type="Integer" array="False" size=""/>
+            <assign variable="pin2" expression="1705"/>
+            <output expression="&quot;Enter a two digit number&quot;" newline="True"/>
+            <comment text="Write a random 2 digit number"/>
+            <input variable="pin1"/>
+            <if expression="pin1&lt;100">
+                <then>
+                    <output expression="&quot;Please select your process&quot;" newline="True"/>
+                    <output expression="&quot;1 withdrawl&quot;" newline="True"/>
+                    <output expression="&quot;2 deposit&quot;" newline="True"/>
+                    <output expression="&quot;3 view balence&quot;" newline="True"/>
+                    <output expression="&quot;4 change pin&quot;" newline="True"/>
+                    <input variable="value"/>
+                    <if expression="value=1">
+                        <then>
+                            <output expression="&quot;Enter the amount&quot;" newline="True"/>
+                            <input variable="amount"/>
+                            <comment text="enter the amount required to withdrawl"/>
+                            <if expression="amount&lt;5000">
+                                <then>
+                                    <comment text="enter the correct atm pin&#13;&#10;"/>
+                                    <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                                    <input variable="pin2"/>
+                                    <if expression="pin2=1705">
+                                        <then>
+                                            <output expression="&quot;Your transaction is going on please wait&quot;" newline="True"/>
+                                            <output expression="&quot;Please collect the money&quot;" newline="True"/>
+                                            <assign variable="balence" expression="5000-amount"/>
+                                            <comment text="conclude the acount details "/>
+                                            <output expression="&quot;Account number 12345678&quot;" newline="True"/>
+                                            <output expression="&quot;Mr.XYZ&quot;" newline="True"/>
+                                            <output expression="&quot;your current balence is&quot;&amp; balence" newline="True"/>
+                                            <if expression="balence&gt;1000">
+                                                <then>
+                                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Your account doesn't have minimum balence&quot;" newline="True"/>
+                                                    <output expression="&quot;Maintain the minimum balence of 1000 to avoid penalty charges&quot;" newline="True"/>
+                                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Incorrect pin&quot;" newline="True"/>
+                                            <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Insufficient balence&quot;" newline="True"/>
+                                    <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="value=2">
+                                <then>
+                                    <output expression="&quot;Enter the amount&quot;" newline="True"/>
+                                    <input variable="amount"/>
+                                    <comment text="enter the amount required to deposit"/>
+                                    <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                                    <input variable="pin2"/>
+                                    <if expression="pin2=1705">
+                                        <then>
+                                            <output expression="&quot;The amount was successfully deposited&quot;" newline="True"/>
+                                            <output expression="&quot;Account number 12345678&quot;" newline="True"/>
+                                            <output expression="&quot;Mr.XYZ&quot;" newline="True"/>
+                                            <assign variable="balence" expression="5000+amount"/>
+                                            <output expression="&quot;your current balence is&quot;&amp;balence" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Incorrect pin&quot;" newline="True"/>
+                                            <output expression="&quot;your transaction was timed out&quot;" newline="True"/>
+                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="value=3">
+                                        <then>
+                                            <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                                            <input variable="pin2"/>
+                                            <if expression="pin2=1705">
+                                                <then>
+                                                    <output expression="&quot;Account number 12345678&quot;" newline="True"/>
+                                                    <output expression="&quot;Mr.XYZ&quot;" newline="True"/>
+                                                    <output expression="&quot;your current balence is 5000&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Incorrect pin&quot;" newline="True"/>
+                                                    <output expression="&quot;your transaction was timed out&quot;" newline="True"/>
+                                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="value=4">
+                                                <then>
+                                                    <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                                                    <input variable="pin2"/>
+                                                    <if expression="pin2=1705">
+                                                        <then>
+                                                            <output expression="&quot;enter your new pin&quot;" newline="True"/>
+                                                            <input variable="pin3"/>
+                                                            <assign variable="pin2" expression="pin3"/>
+                                                            <output expression="&quot;your pin was successfully updated&quot;" newline="True"/>
+                                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Incorrect pin&quot;" newline="True"/>
+                                                            <output expression="&quot;your transaction was timed out&quot;" newline="True"/>
+                                                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Invalid details&quot;" newline="True"/>
+                                                    <output expression="&quot;your transaction was timed out&quot;" newline="True"/>
+                                                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Incorrect details&quot;" newline="True"/>
+                    <output expression="&quot;Your transaction was timed out&quot;" newline="True"/>
+                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
