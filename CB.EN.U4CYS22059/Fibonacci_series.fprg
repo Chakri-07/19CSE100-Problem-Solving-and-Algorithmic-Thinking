@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:53:43 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzEwOjEzOjA0IEFNOzMzMTU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzEwOjUzOjQzIEFNOzEwOzM0Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare the variables"/>
+            <declare name="a, b, n, c, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of n&quot;" newline="True"/>
+            <comment text="Give yhe input required"/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="x" expression="1"/>
+            <comment text="Initialisation of while loop"/>
+            <while expression="x&lt;=n">
+                <output expression="&quot;Fibnocci series&quot;" newline="True"/>
+                <comment text="Initialisation of for loop"/>
+                <for variable="x" start="1" end="n" direction="inc" step="1">
+                    <comment text="Assign the values&#13;&#10;"/>
+                    <assign variable="c" expression="a+b"/>
+                    <output expression="a&amp;&quot;+&quot;&amp;b&amp;&quot;is&quot;&amp;c" newline="True"/>
+                    <assign variable="a" expression="b"/>
+                    <assign variable="b" expression="c"/>
+                </for>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
