@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22059"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:01:59 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzA5OjMxOjMwIEFNOzMzMjI="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzEwOjAxOjU0IEFNOzM7Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzA5OjU0OjU2IEFNO2FkZGl0aW9uX3RhYmxlLmZwcmc7ODgxNg=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1OTsyMDIyMjNNQVlDMDA5NjsyMDIyLTEyLTAyOzEwOjAxOjU5IEFNOzE3OzM0ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#13;&#10;Declare the variables"/>
+            <declare name="a, b, n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <comment text="assign n using while loop"/>
+            <while expression="n&lt;=10">
+                <comment text="give output by discribing the table it was"/>
+                <output expression="&quot;miltiplication table of&quot;&amp;n" newline="True"/>
+                <comment text="using for loop assign a"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="b" expression="n*a"/>
+                    <output expression="a&amp;&quot;*&quot;&amp;n&amp;&quot;is &quot;&amp;b" newline="True"/>
+                </for>
+                <assign variable="n" expression="n+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
