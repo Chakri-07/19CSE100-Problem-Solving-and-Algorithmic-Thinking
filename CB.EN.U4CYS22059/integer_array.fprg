@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chakr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:13:08 AM"/>
+        <attribute name="created" value="Y2hha3I7TEFQVE9QLVRVVEU2Vk45OzIwMjItMTItMDk7MDk6MzA6NTggQU07Mjg5OQ=="/>
+        <attribute name="edited" value="Y2hha3I7TEFQVE9QLVRVVEU2Vk45OzIwMjItMTItMDk7MTE6MTM6MDggQU07MTM7MzA0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declare the array"/>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <declare name="b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter 10 values&quot;" newline="True"/>
+            <comment text="using for loop assign the values"/>
+            <for variable="b" start="0" end="9" direction="inc" step="1">
+                <input variable="c"/>
+                <assign variable="a[b]" expression="c"/>
+            </for>
+            <comment text="again by using the for loop get the output"/>
+            <for variable="b" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;a[&quot;&amp;b+1&amp;&quot;] is&quot;&amp;a[b]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
